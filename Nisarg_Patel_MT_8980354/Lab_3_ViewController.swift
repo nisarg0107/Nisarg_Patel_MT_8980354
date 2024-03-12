@@ -10,27 +10,27 @@ import UIKit
 class Lab_3_ViewController: UIViewController {
 
  
-    @IBOutlet weak var fname: UITextField!
+    @IBOutlet weak var fname: UITextField!      //  first name text field linked
     
-    @IBOutlet weak var lname: UITextField!
+    @IBOutlet weak var lname: UITextField!      //  last name text field linked
     
-    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var country: UITextField!    //  country name text field linked
     
-    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var age: UITextField!        //  age text field linked
     
-    @IBOutlet weak var displayArea: UITextView!
+    @IBOutlet weak var displayArea: UITextView! //  display area text view linked
     
-    @IBOutlet weak var responseArea: UILabel!
+    @IBOutlet weak var responseArea: UILabel!   //  response label linked
     
     
-    @IBOutlet weak var addInfo: UIButton!
+    @IBOutlet weak var addInfo: UIButton!       //  add button linked
     @IBAction func addInfo(_ sender: Any) {
         displayArea.text = "Full Name : \(fname.text!) \(lname.text!) \nCountry : \(country.text!) \nAge : \(age.text!)"
 
     }
     
     
-    @IBOutlet weak var submitInfo: UIButton!
+    @IBOutlet weak var submitInfo: UIButton!        //  submit button linked
     @IBAction func submitInfo(_ sender: Any) {
         
         if (fname.text!.isEmpty || lname.text!.isEmpty || country.text!.isEmpty || age.text!.isEmpty){
@@ -46,7 +46,10 @@ class Lab_3_ViewController: UIViewController {
     }
     
     
-    @IBOutlet weak var clearInfo: UIButton!
+    @IBOutlet weak var clearInfo: UIButton!     // clear button linked
+    
+    // code to clear all values
+    
     @IBAction func clearInfo(_ sender: Any) {
         fname.text!.removeAll()
         lname.text!.removeAll()

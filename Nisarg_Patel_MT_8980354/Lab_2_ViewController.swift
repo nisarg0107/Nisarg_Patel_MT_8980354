@@ -2,12 +2,12 @@ import UIKit
 
 class Lab_2_ViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label: UILabel!  // label linked
     var count = 0
     var initial = 0
     
-    @IBAction func incButton(_ sender: Any) {
-        if(initial == 0){
+    @IBAction func incButton(_ sender: Any) {  // increment button linked
+        if(initial == 0){       // code for increment value by 2
             count += 1
             label.text = String(count)
         }else if(initial == 1){
@@ -15,8 +15,8 @@ class Lab_2_ViewController: UIViewController {
             label.text = String(count)
         }
     }
-    @IBAction func decButton(_ sender: Any) {
-        if(initial == 0){
+    @IBAction func decButton(_ sender: Any) {       // decrement button linked
+        if(initial == 0){       // code for decrement value by 2
             count -= 1
             label.text = String(count)
         }else if(initial == 1){
@@ -24,7 +24,10 @@ class Lab_2_ViewController: UIViewController {
             label.text = String(count)
         }
     }
-    @IBAction func reset(_ sender: Any) {
+    
+    // code to reset all values
+    
+    @IBAction func reset(_ sender: Any) {       // reset button linked
         label.text = String(0)
         count = 0
         initial = 0

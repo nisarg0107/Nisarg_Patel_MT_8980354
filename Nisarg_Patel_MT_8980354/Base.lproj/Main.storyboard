@@ -119,7 +119,7 @@
         <!--MyLabs-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="MyLabs" customClass="ViewController" customModule="Nisarg_Patel_MT_8980354" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="MyLabs" customClass="Profile_ViewController" customModule="Nisarg_Patel_MT_8980354" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,42 +154,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="Kgd-3y-QdR">
-                                <rect key="frame" x="49.666666666666657" y="704.33333333333337" width="294" height="50"/>
+                                <rect key="frame" x="152.33333333333334" y="704.33333333333337" width="88.333333333333343" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOO-n9-eKX">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="88.333333333333329" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="68" id="5Qm-ay-pF9"/>
-                                            <constraint firstAttribute="height" constant="50" id="yPQ-qu-kOn"/>
+                                            <constraint firstAttribute="width" constant="88.329999999999998" id="PCl-lk-Xfp"/>
+                                            <constraint firstAttribute="height" constant="50" id="T9L-2p-K9C"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Lab 2"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="My Labs"/>
                                         <connections>
                                             <segue destination="gcE-KV-EKz" kind="show" id="2W3-Tk-t4n"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G50-bA-6jS">
-                                        <rect key="frame" x="113" y="0.0" width="68" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2eW-cI-Bfu"/>
-                                            <constraint firstAttribute="width" constant="68" id="Abb-5O-rks"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Lab 3"/>
-                                        <connections>
-                                            <segue destination="VNz-vk-ahx" kind="show" id="6Yv-hf-mZu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="505-Gp-bzl">
-                                        <rect key="frame" x="226" y="0.0" width="68" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="68" id="QEF-pR-hQV"/>
-                                            <constraint firstAttribute="height" constant="50" id="UMA-yQ-bjP"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Lab 4"/>
-                                        <connections>
-                                            <segue destination="yiv-UR-uRg" kind="show" id="fHu-Xx-H9a"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -405,7 +381,7 @@
                                             </textField>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uxu-8M-iGa">
                                                 <rect key="frame" x="0.0" y="88" width="150" height="34"/>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="numberPad"/>
@@ -623,7 +599,13 @@
                             <constraint firstItem="uQz-U5-QFc" firstAttribute="top" secondItem="WB3-u8-QJr" secondAttribute="top" constant="91" id="pWW-X9-Sng"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="3Qa-7i-663"/>
+                    <navigationItem key="navigationItem" id="3Qa-7i-663">
+                        <barButtonItem key="rightBarButtonItem" title="Lab 3" id="xPb-wo-Zjs">
+                            <connections>
+                                <segue destination="VNz-vk-ahx" kind="show" id="LS2-QM-OK0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="label" destination="sY2-Qk-1ig" id="4UX-ix-6Xn"/>
                     </connections>
@@ -764,7 +746,13 @@
                             <constraint firstItem="NLV-gv-ja7" firstAttribute="centerX" secondItem="e3i-mR-G1s" secondAttribute="centerX" id="n3I-Qs-iUO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Ohv-XA-Rnn"/>
+                    <navigationItem key="navigationItem" id="Ohv-XA-Rnn">
+                        <barButtonItem key="rightBarButtonItem" title="Lab 4" id="SZZ-Qd-jWg">
+                            <connections>
+                                <segue destination="yiv-UR-uRg" kind="show" id="Khb-rg-YEe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addInfo" destination="Ltq-8P-V45" id="Yey-8R-rex"/>
                         <outlet property="age" destination="Orr-x1-CKK" id="NgX-s5-sAl"/>
@@ -784,7 +772,7 @@
         <!--Lab4-->
         <scene sceneID="QvK-2L-fcX">
             <objects>
-                <viewController id="yiv-UR-uRg" userLabel="Lab4" customClass="ViewController" customModule="Nisarg_Patel_MT_8980354" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yiv-UR-uRg" userLabel="Lab4" customClass="Lab_4_ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sNV-8A-WVG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -855,11 +843,11 @@
         <image name="Canada" width="32" height="33.666667938232422"/>
         <image name="Image" width="37" height="37"/>
         <image name="ProfilePic" width="1344" height="1008"/>
-        <image name="clipboard" catalog="system" width="103" height="128"/>
-        <image name="cricket.ball" catalog="system" width="128" height="123"/>
+        <image name="clipboard" catalog="system" width="32" height="32"/>
+        <image name="cricket.ball" catalog="system" width="32" height="32"/>
         <image name="film" catalog="system" width="128" height="93"/>
-        <image name="gamecontroller" catalog="system" width="128" height="79"/>
-        <image name="globe" catalog="system" width="128" height="123"/>
+        <image name="gamecontroller" catalog="system" width="32" height="32"/>
+        <image name="globe" catalog="system" width="32" height="32"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="the-quadratic-formula-and-the-values-of-discriminant-1024x655" width="341.33334350585938" height="218.33332824707031"/>
         <systemColor name="labelColor">

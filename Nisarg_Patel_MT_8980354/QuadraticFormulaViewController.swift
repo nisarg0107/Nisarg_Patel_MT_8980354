@@ -9,11 +9,13 @@ import UIKit
 
 class QuadraticFormulaViewController: UIViewController {
 
-    @IBOutlet weak var TextFieldA: UITextField!
-    @IBOutlet weak var TextFieldB: UITextField!
-    @IBOutlet weak var TextFieldC: UITextView!
+    @IBOutlet weak var TextFieldA: UITextField!     //  text field A linked
+    @IBOutlet weak var TextFieldB: UITextField!     //  text field B linked
+    @IBOutlet weak var TextFieldC: UITextView!      //  text field C linked
     @IBOutlet weak var error: UILabel!
 
+    // saving values of a,b and c
+    
     @IBAction func result(_ sender: UIButton) {
         guard let a = Double(TextFieldA.text ?? ""),
               let b = Double(TextFieldB.text ?? ""),
@@ -40,7 +42,7 @@ class QuadraticFormulaViewController: UIViewController {
                     return
                 }
 
-        let discriminant = b * b - 4 * a * c
+        let discriminant = b * b - 4 * a * c    // formula to calculate the value
 
         guard discriminant >= 0 else {
             showError("There are no real roots since the discriminant is less than zero.")
@@ -56,30 +58,38 @@ class QuadraticFormulaViewController: UIViewController {
             showResult("There are two values for X: \(root1) and \(root2)")
         }
     }
-
-    @IBAction func clear(_ sender: UIButton) {
+    
+   
+    
+    @IBAction func clear(_ sender: UIButton) {  // clear button linked
         clearTextFields()
         showError("Enter the values for A, B, and C to find X.")
     }
 
+    // code for displaying error
+    
     func showError(_ message: String) {
         error.textColor = .red
         error.text = message
         error.isHidden = false
     }
+    
+    // displaying final result
 
     func showResult(_ message: String) {
         error.textColor = .black
         error.text = message
         error.isHidden = false
     }
+    
+    // code to clear all values
 
     func clearTextFields() {
         TextFieldA.text = ""
         TextFieldB.text = ""
         TextFieldC.text = ""
     }
-
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

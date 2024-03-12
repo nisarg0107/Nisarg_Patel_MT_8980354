@@ -10,7 +10,7 @@
 		0F3D79B72B9E410900A5D5C8 /* CanadaSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D79B62B9E410900A5D5C8 /* CanadaSceneViewController.swift */; };
 		0F46B8262B95373B007AF22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46B8252B95373B007AF22B /* AppDelegate.swift */; };
 		0F46B8282B95373B007AF22B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46B8272B95373B007AF22B /* SceneDelegate.swift */; };
-		0F46B82A2B95373B007AF22B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46B8292B95373B007AF22B /* ViewController.swift */; };
+		0F46B82A2B95373B007AF22B /* Lab_4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F46B8292B95373B007AF22B /* Lab_4_ViewController.swift */; };
 		0F46B82D2B95373B007AF22B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F46B82B2B95373B007AF22B /* Main.storyboard */; };
 		0F46B8302B95373B007AF22B /* Nisarg_Patel_MT_8980354.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F46B82E2B95373B007AF22B /* Nisarg_Patel_MT_8980354.xcdatamodeld */; };
 		0F46B8322B95373C007AF22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F46B8312B95373C007AF22B /* Assets.xcassets */; };
@@ -21,6 +21,7 @@
 		0F6E1D782B9EADD20089F514 /* QuadraticFormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6E1D772B9EADD20089F514 /* QuadraticFormulaViewController.swift */; };
 		0F90EFA62B9BDF4100FE2C25 /* Lab_2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EFA52B9BDF4100FE2C25 /* Lab_2_ViewController.swift */; };
 		0F90EFA82B9BE13C00FE2C25 /* Lab_3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F90EFA72B9BE13C00FE2C25 /* Lab_3_ViewController.swift */; };
+		0FB860D12B9FFCA900DEC68A /* Profile_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB860D02B9FFCA900DEC68A /* Profile_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,7 @@
 		0F46B8222B95373B007AF22B /* Nisarg_Patel_MT_8980354.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nisarg_Patel_MT_8980354.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F46B8252B95373B007AF22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F46B8272B95373B007AF22B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0F46B8292B95373B007AF22B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0F46B8292B95373B007AF22B /* Lab_4_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_4_ViewController.swift; sourceTree = "<group>"; };
 		0F46B82C2B95373B007AF22B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0F46B82F2B95373B007AF22B /* Nisarg_Patel_MT_8980354.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Nisarg_Patel_MT_8980354.xcdatamodel; sourceTree = "<group>"; };
 		0F46B8312B95373C007AF22B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		0F6E1D772B9EADD20089F514 /* QuadraticFormulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuadraticFormulaViewController.swift; sourceTree = "<group>"; };
 		0F90EFA52B9BDF4100FE2C25 /* Lab_2_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_2_ViewController.swift; sourceTree = "<group>"; };
 		0F90EFA72B9BE13C00FE2C25 /* Lab_3_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_3_ViewController.swift; sourceTree = "<group>"; };
+		0FB860D02B9FFCA900DEC68A /* Profile_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +113,10 @@
 			children = (
 				0F46B8252B95373B007AF22B /* AppDelegate.swift */,
 				0F46B8272B95373B007AF22B /* SceneDelegate.swift */,
-				0F46B8292B95373B007AF22B /* ViewController.swift */,
+				0F46B8292B95373B007AF22B /* Lab_4_ViewController.swift */,
 				0F3D79B62B9E410900A5D5C8 /* CanadaSceneViewController.swift */,
 				0F46B82B2B95373B007AF22B /* Main.storyboard */,
+				0FB860D02B9FFCA900DEC68A /* Profile_ViewController.swift */,
 				0F6E1D772B9EADD20089F514 /* QuadraticFormulaViewController.swift */,
 				0F90EFA72B9BE13C00FE2C25 /* Lab_3_ViewController.swift */,
 				0F90EFA52B9BDF4100FE2C25 /* Lab_2_ViewController.swift */,
@@ -273,12 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F46B82A2B95373B007AF22B /* ViewController.swift in Sources */,
+				0F46B82A2B95373B007AF22B /* Lab_4_ViewController.swift in Sources */,
 				0F3D79B72B9E410900A5D5C8 /* CanadaSceneViewController.swift in Sources */,
 				0F6E1D782B9EADD20089F514 /* QuadraticFormulaViewController.swift in Sources */,
 				0F46B8302B95373B007AF22B /* Nisarg_Patel_MT_8980354.xcdatamodeld in Sources */,
 				0F90EFA82B9BE13C00FE2C25 /* Lab_3_ViewController.swift in Sources */,
 				0F46B8262B95373B007AF22B /* AppDelegate.swift in Sources */,
+				0FB860D12B9FFCA900DEC68A /* Profile_ViewController.swift in Sources */,
 				0F90EFA62B9BDF4100FE2C25 /* Lab_2_ViewController.swift in Sources */,
 				0F46B8282B95373B007AF22B /* SceneDelegate.swift in Sources */,
 			);

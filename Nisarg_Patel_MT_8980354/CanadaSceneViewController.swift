@@ -9,11 +9,13 @@ import UIKit
 
 class CanadaSceneViewController: UIViewController {
 
-    @IBOutlet weak var cityName: UITextField!
-    @IBOutlet weak var error: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var cityName: UITextField!    // text field linked
+    @IBOutlet weak var error: UILabel!          //  error label linked
+    @IBOutlet weak var image: UIImageView!      //  image linked
    
-    @IBAction func findMyCity(_ sender: UIButton) {
+    // code to find image of entered city //
+    
+    @IBAction func findMyCity(_ sender: UIButton) {     // button linked
         guard let cities = cityName.text?.lowercased(), !cities.isEmpty else {
             showError("Try Again!!")
             return
@@ -30,10 +32,14 @@ class CanadaSceneViewController: UIViewController {
         }
     }
    
+    // to dismiss keyboard when tap on screen
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
    
+    // for default image displaying
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         image.image = UIImage(named: "Canada")
@@ -43,6 +49,8 @@ class CanadaSceneViewController: UIViewController {
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
+    
+    // to showing error while entering wrong image
    
     func showError(_ message: String) {
         error.isHidden = false
